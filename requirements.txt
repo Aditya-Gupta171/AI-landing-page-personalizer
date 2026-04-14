@@ -1,0 +1,9 @@
+streamlit
+groq
+requests
+beautifulsoup4
+lxml
+python-dotenv
+trafilatura
+pydantic
+playwright
