@@ -15,8 +15,7 @@ def _is_js_rendering_enabled() -> bool:
     if not enabled:
         return False
 
-    # On some Windows + Streamlit runtimes Playwright subprocess startup can emit
-    # noisy asyncio NotImplementedError warnings. Keep it off unless explicitly forced.
+    
     if os.name == "nt":
         allow_unstable = (
             os.getenv("ENABLE_JS_RENDERING_UNSTABLE", "false").strip().lower() == "true"
